@@ -19,7 +19,6 @@ public class EmpListController extends HttpServlet {
 		EmpDAO ed=new EmpDAO();
 		List<EmpModel> allemps=ed.getAllDetails();
 		System.out.println(allemps);
-		System.out.println("heloo");
 		request.setAttribute("allemps", allemps);
 		RequestDispatcher rd=request.getRequestDispatcher("home.jsp");
 		rd.forward(request, response);
